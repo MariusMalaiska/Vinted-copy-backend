@@ -1,4 +1,7 @@
 const router = require("express").Router();
+router.get("/", async (req, res) => {
+  res.json({ message: "wellcome" });
+});
 const multer = require("multer");
 
 const storage = multer.diskStorage({
