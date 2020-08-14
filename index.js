@@ -1,5 +1,7 @@
 require("dotenv").config();
 
+// const db = require("./db");
+
 // process.env.Port ||
 // const Port = process.env.MONGODB_URI || process.env.DB_HOST;
 // const Port =
@@ -17,7 +19,7 @@ const cors = require("cors");
 
 const router = require("./routes/routes");
 
-mongoose.connect(process.env.DB_HOST, {
+mongoose.connect(process.env.DB_HOST2, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
