@@ -10,16 +10,36 @@ const AdvertSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+  city: {
+    type: String,
+    required: true
+  },
   about: {
     type: String,
     required: true,
     minlength: 10
   },
-  sell: {
+  condition: {
     type: String,
     required: true
   },
-  buy: {
+  color: {
+    type: String,
+    required: true
+  },
+  brand: {
+    type: String,
+    required: true
+  },
+  height: {
+    type: String,
+    required: true
+  },
+  width: {
+    type: String,
+    required: true
+  },
+  size: {
     type: String,
     required: true
   },
@@ -30,14 +50,6 @@ const AdvertSchema = new mongoose.Schema({
   itemPicture: {
     type: String,
     required: false
-  },
-  city: {
-    type: String,
-    required: true
-  },
-  condition: {
-    type: String,
-    required: true
   },
   createdAt: {
     type: Date,

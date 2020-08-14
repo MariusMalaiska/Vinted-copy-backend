@@ -17,13 +17,19 @@ createAdvert = async (req, res) => {
     let advertItem = new advertModel();
     advertItem.title = data.title;
     advertItem.category = data.category;
-    advertItem.about = data.about;
-    advertItem.sell = data.sell;
-    advertItem.buy = data.buy;
-    advertItem.price = data.price;
     advertItem.city = data.city;
+    advertItem.about = data.about;
     advertItem.condition = data.condition;
-    advertItem.itemPicture = `http://localhost:3001/${req.file.path}`;
+    advertItem.color = data.color;
+    advertItem.brand = data.brand;
+    advertItem.height = data.height;
+    advertItem.width = data.width;
+    advertItem.size = data.size;
+    advertItem.price = data.price;
+
+    advertItem.itemPicture = `http://localhost:3006/${req.file.path}`;
+    // advertItem.itemPicture = data.itemPicture;
+    // ------
     advertItem.user = user._id;
     // advertItem.userName = user.nickName;
     // advertItem.userphone = user.phonenumber;
