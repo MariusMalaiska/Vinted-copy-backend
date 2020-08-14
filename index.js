@@ -19,7 +19,7 @@ const cors = require("cors");
 
 const router = require("./routes/routes");
 
-mongoose.connect(process.env.DB_HOST2, {
+mongoose.connect(process.env.DB_HOST, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
