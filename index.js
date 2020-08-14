@@ -5,6 +5,11 @@ require("dotenv").config();
 // const Port =
 //   "mongodb://admin11:admin11@ds051658.mlab.com:51658/heroku_jzcbn16d";
 
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 3006;
+}
+
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
@@ -37,4 +42,4 @@ app.use(bodyParser.json());
 
 app.use("/v1", router);
 
-app.listen(3006);
+app.listen(port);
