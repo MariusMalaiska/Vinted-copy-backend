@@ -26,8 +26,8 @@ createAdvert = async (req, res) => {
     advertItem.width = data.width;
     advertItem.size = data.size;
     advertItem.price = data.price;
-
-    advertItem.itemPicture = `http://localhost:3006/${req.file.path}`;
+    advertItem.itemPicture = `https://vinted-copy.herokuapp.com/${req.file.path}`;
+    // advertItem.itemPicture = `http://localhost:3006/${req.file.path}`;
     // advertItem.itemPicture = data.itemPicture;
     // ------
     advertItem.user = user._id;
