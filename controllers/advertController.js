@@ -22,8 +22,8 @@ createAdvert = async (req, res) => {
     advertItem.condition = data.condition;
     advertItem.color = data.color;
     advertItem.brand = data.brand;
-    advertItem.height = data.height;
-    advertItem.width = data.width;
+    // advertItem.height = data.height;
+    // advertItem.width = data.width;
     advertItem.size = data.size;
     advertItem.price = data.price;
     advertItem.itemPicture = `https://vinted-copy.herokuapp.com/${req.file.path}`;

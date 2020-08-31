@@ -25,20 +25,20 @@ const AdvertSchema = new mongoose.Schema({
   },
   color: {
     type: String,
-    required: true
+    required: false
   },
   brand: {
     type: String,
-    required: true
+    required: false
   },
-  height: {
-    type: String,
-    required: true
-  },
-  width: {
-    type: String,
-    required: true
-  },
+  // height: {
+  //   type: String,
+  //   required: true
+  // },
+  // width: {
+  //   type: String,
+  //   required: true
+  // },
   size: {
     type: String,
     required: true
